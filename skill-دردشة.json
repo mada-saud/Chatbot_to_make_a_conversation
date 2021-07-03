@@ -1,0 +1,822 @@
+{
+  "intents": [
+    {
+      "intent": "أسئلة",
+      "examples": [
+        {
+          "text": "كيف احط الرقم بجانب السلايدر ؟"
+        },
+        {
+          "text": "كيف اضفت الازرار ؟"
+        },
+        {
+          "text": "كيف اضفت السلايدر للواجهة ؟"
+        },
+        {
+          "text": "هل اقدر احط صورة للخلفية كلها ؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "استفسار",
+      "examples": [
+        {
+          "text": "ابستفسر عن شيء"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "أهلا وسهلا"
+        },
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "السلام عليكم ورحمة الله وبركاته"
+        },
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "اهلا بك"
+        },
+        {
+          "text": "اهلا فيك"
+        },
+        {
+          "text": "صباح الخير"
+        },
+        {
+          "text": "صباح النور"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "مرحبا بك"
+        },
+        {
+          "text": "مرحبا فيك"
+        },
+        {
+          "text": "مساء الخير"
+        },
+        {
+          "text": "مساء النور"
+        },
+        {
+          "text": "ياهلا"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "وداع",
+      "examples": [
+        {
+          "text": "الى اللقاء"
+        },
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "شكرا لك"
+        },
+        {
+          "text": "مع السلامة"
+        },
+        {
+          "text": "يعطيك العافية"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "اسئلة",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "كيف احط الرقم بجانب السلايدر؟",
+          "synonyms": [
+            "كيف احط الرقم ",
+            "كيف اخلي الرقم يتحرك ؟"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "كيف اضيف الازرار ؟",
+          "synonyms": [
+            "كيف اضفت الازرار؟"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "كيف اضيف السلايدر للواجهة ؟",
+          "synonyms": [
+            "كيف اضفت السلايدر للواجهة ؟",
+            "كيف اضيف السلايدر ؟"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "كيف انسق الشكل ؟",
+          "synonyms": [
+            "كيف احط حواف للازرار ؟",
+            "كيف احط لون للخلفية ؟",
+            "كيف ارتب الازرار ؟"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ممكن اسأل",
+          "synonyms": [
+            "حابه اسأل",
+            "عادي اسأل",
+            "عندي سؤال",
+            "ممكن سؤال"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "هل اقدر احط صورة للخلفية كلها ؟",
+          "synonyms": [
+            "صح اقدر احط صورة للخلفية ؟",
+            "عادي احط صوره في الخلفية ؟",
+            "هل اقدر احط صورة بالخلفية؟"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "استفسار",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ابستفسر عن شيء",
+          "synonyms": [
+            "حابه استفسر",
+            "عندي اسفسار"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "كيف صنعوا القطع",
+          "synonyms": [
+            "كيف سوو القطع"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "كيف يتحكم بالذراع",
+          "synonyms": [
+            "كيف يتم التحكم بالذراع ؟",
+            "كيف يتم التحكم فيه ؟"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "كيف يركبون القطع",
+          "synonyms": [
+            "طريقة ترطيب القطع ",
+            "كيف يتم تركيب القطع ",
+            "كيف يركبون قطع الذراع "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "كيف يمشي الذراع",
+          "synonyms": [
+            "كيف يتحرك الذراع",
+            "كيف يلف",
+            "كيف يوقف ",
+            "كيف يوقف الذراع"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ترحيب",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "السلام عليكم ورحمة الله وبركاتة",
+          "synonyms": [
+            "السلام",
+            "السلام عليكم"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "صباح الخير",
+          "synonyms": [
+            "صباح الفل",
+            "صباح النور",
+            "صباح الورد",
+            "صباح الياسمين"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "مرحبا",
+          "synonyms": [
+            "اهلاً",
+            "اهلاً وسهلا",
+            "مراحب",
+            "مرحبا بك",
+            "هلا",
+            "هلا فيك",
+            "هلا والله"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "مساء الخير",
+          "synonyms": [
+            "مساء الفل",
+            "مساء النور"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "وداع",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "الى اللقاء",
+          "synonyms": [
+            "مع السلامة "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "شكراً",
+          "synonyms": [
+            "شكراً لتعاملك معانا",
+            "شكراً لك"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ماقصرت",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "يعطيك العافية",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "اسئلة ",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@اسئلة",
+      "dialog_node": "node_2_1625086808224",
+      "previous_sibling": "node_5_1625086790277"
+    },
+    {
+      "type": "standard",
+      "title": "وداع ",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@وداع",
+      "dialog_node": "node_4_1625081564088",
+      "previous_sibling": "node_5_1625000420886"
+    },
+    {
+      "type": "standard",
+      "title": "وداع",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1625081564088"
+      },
+      "conditions": "#وداع",
+      "dialog_node": "node_5_1625000420886",
+      "previous_sibling": "node_2_1625086808224"
+    },
+    {
+      "type": "standard",
+      "title": "اسئلة",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1625086808224"
+      },
+      "conditions": "#أسئلة",
+      "dialog_node": "node_5_1625086790277",
+      "previous_sibling": "node_8_1625084798287"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@ترحيب",
+      "dialog_node": "node_6_1625082006767",
+      "previous_sibling": "node_9_1625081992465"
+    },
+    {
+      "type": "standard",
+      "title": "استفسار",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@استفسار",
+      "dialog_node": "node_8_1625084798287",
+      "previous_sibling": "node_9_1625084780444"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1625082006767"
+      },
+      "conditions": "#ترحيب",
+      "dialog_node": "node_9_1625081992465",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "title": "استفسار",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1625084798287"
+      },
+      "conditions": "#استفسار",
+      "dialog_node": "node_9_1625084780444",
+      "previous_sibling": "node_6_1625082006767"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "الله يعافيك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1625081564088",
+      "conditions": "@وداع:(يعطيك العافية)",
+      "dialog_node": "response_1_1625081657304",
+      "previous_sibling": "response_2_1625081635873"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "تفضل "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1625084798287",
+      "conditions": "@استفسار:(ابستفسر عن شيء)",
+      "dialog_node": "response_1_1625084814436"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "باستخدام قاعدة لديها 4 عجلات ويتم التحكم فيها عن طريق الازرار الموجوده في الواجهة"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1625084798287",
+      "conditions": "@استفسار:(كيف يمشي الذراع)",
+      "dialog_node": "response_1_1625084938159",
+      "previous_sibling": "response_4_1625084912935"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اي تفضل "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1625086808224",
+      "conditions": "@اسئلة:(ممكن اسأل)",
+      "dialog_node": "response_1_1625087052708",
+      "previous_sibling": "response_8_1625086990895"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "عفواً."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1625081564088",
+      "conditions": "@وداع:(شكراً)",
+      "dialog_node": "response_2_1625081635873",
+      "previous_sibling": "response_8_1625081582999"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "فيه مقاطع كثير باليوتيوب انصحك تروح تشوفها"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1625084798287",
+      "conditions": "@استفسار:(كيف يركبون القطع)",
+      "dialog_node": "response_2_1625084983358",
+      "previous_sibling": "response_1_1625084938159"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "باستخدام طابعة 3د , فيه مقاطع على اليوتيوب تشرح لك كيف يتم صناعة القطع"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1625084798287",
+      "conditions": "@استفسار:(كيف صنعوا القطع)",
+      "dialog_node": "response_3_1625084836687",
+      "previous_sibling": "response_1_1625084814436"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "هلا صباح الخير"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1625082006767",
+      "conditions": "@ترحيب:(صباح الخير)",
+      "dialog_node": "response_4_1625082059351",
+      "previous_sibling": "response_6_1625082025771"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "عن طريق السلايدر الي موجود في الواجهة"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1625084798287",
+      "conditions": "@استفسار:(كيف يتحكم بالذراع)",
+      "dialog_node": "response_4_1625084912935",
+      "previous_sibling": "response_3_1625084836687"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "تقدر ترتب وتنسق باستخدام css"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1625086808224",
+      "conditions": "@اسئلة:(كيف انسق الشكل ؟)",
+      "dialog_node": "response_4_1625087190987",
+      "previous_sibling": "response_5_1625087157734"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحباً بك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1625082006767",
+      "conditions": "@ترحيب:مرحبا",
+      "dialog_node": "response_5_1625082080084",
+      "previous_sibling": "response_4_1625082059351"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مساء الخير"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1625082006767",
+      "conditions": "@ترحيب:(مساء الخير)",
+      "dialog_node": "response_5_1625082101438",
+      "previous_sibling": "response_5_1625082080084"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "اول شيء احط الرقم باستخدام تاق span واخلي الرقم يتحرك باستخدام JavaScript"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1625086808224",
+      "conditions": "@اسئلة:(كيف احط الرقم بجانب السلايدر؟)",
+      "dialog_node": "response_5_1625086829731"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اي تقدر"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1625086808224",
+      "conditions": "@اسئلة:(هل اقدر احط صورة للخلفية كلها ؟)",
+      "dialog_node": "response_5_1625087157734",
+      "previous_sibling": "response_9_1625087108400"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "أهلاً وعليكم السلام ورحمة الله وبركاتة"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1625082006767",
+      "conditions": "@ترحيب:(السلام عليكم ورحمة الله وبركاتة)",
+      "dialog_node": "response_6_1625082025771"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "شرفتنا"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1625081564088",
+      "conditions": "@وداع:ماقصرت",
+      "dialog_node": "response_7_1625081674757",
+      "previous_sibling": "response_1_1625081657304"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "الى اللقاء"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1625081564088",
+      "conditions": "@وداع:(الى اللقاء)",
+      "dialog_node": "response_8_1625081582999"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اضيفها باستخدام تاق button نوع submit"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1625086808224",
+      "conditions": "@اسئلة:(كيف اضيف الازرار ؟)",
+      "dialog_node": "response_8_1625086990895",
+      "previous_sibling": "response_5_1625086829731"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "باستخدام نوع تاق input نوع range"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1625086808224",
+      "conditions": "@اسئلة:(كيف اضيف السلايدر للواجهة ؟)",
+      "dialog_node": "response_9_1625087108400",
+      "previous_sibling": "response_1_1625087052708"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لم أفهم، يمكنك محاولة اعادة الصياغة"
+              },
+              {
+                "text": "هل يمكنك اعادة صياغة عبارتك؟ أنا لا فهم"
+              },
+              {
+                "text": "لم أفهم قصدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_4_1625081564088",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "مرحبا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا، كيف يمكنني مساعدتك؟"
+              },
+              {
+                "text": "اهلاً بك في الدردشة نحن في خدمتك "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "مرحبا"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "دردشة",
+  "language": "ar",
+  "description": ""
+}
