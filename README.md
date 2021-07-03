@@ -1,1 +1,8 @@
 # Chatbot_to_make_a_conversation
+I worked on ibm watson to make a chatbot between the user and the site and ibm watson is a site to make a chatbot that allows the user to ask .
+In the beginning, the idea of the conversation that will take place between the user and the site, which is to ask something about the arm or about the interface, I used intents for the questions that are expected to be said by the user, which are (welcome, inquiry, ask him and farewell) and for each intents there are several questions that can be asked by the user in the conversation. The example of the welcome can say User Peace be upon you or hello.
+Second, Entities, which are questions or greetings and farewells that have more than one formula in writing, an example is possible for the user to say hello or welcome, so we used entities to collect more than one formula for questions
+And finally dialog, which is a group phrase that we would like to arrange the conversation and response so that the first node will appear to the user a question if he wants help.
+The second node welcome which is for the welcome sentences expected to be said by the user, and then node respond to the welcome sentences so that there is a multiple response for each welcome a special response for him for example if the user said Peace be upon you. 
+The response will be upon you, peace mercy and blessings of God be upon you or to say hello the response will be welcome to you and so on these nodes were linked with we would like to welcome using the jump to type and then the fourth node which is about the inquiry and was linked to the fifth clauses which is the response to these inquiries
+and the last node is we node to say goodbye.
